@@ -8,6 +8,9 @@ DB_PATH = DATA_DIR / 'database.db'
 
 SEARCH_TIMEOUT = int(os.getenv('SEARCH_TIMEOUT', 30))
 MAX_ARTICLES = int(os.getenv('MAX_ARTICLES', 10))
+SEARXNG_URL = ""
+RANDOM_DELAY_MAX = float(os.getenv('RANDOM_DELAY_MAX', 2))
+RANDOM_DELAY_MIN = float(os.getenv('RANDOM_DELAY_MIN', 0.6))
 
 HOST = '0.0.0.0'
 PORT = '63077'
